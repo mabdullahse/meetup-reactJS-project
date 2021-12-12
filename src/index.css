@@ -1,4 +1,25 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  background: linear-gradient(
+    to right top,
+    #e1e1e1,
+    #e8e8e8,
+    #f0f0f0,
+    #f7f7f7,
+    #ffffff
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: auto;
+}
+@supports (scrollbar-gutter: stable) {
+  html {
+    scrollbar-gutter: stable;
+  }
 }

@@ -15,35 +15,35 @@ input[type="url"] {
   padding: 15px 22px;
   margin: 10px 5px;
   box-sizing: border-box;
-  border: 4px solid #8842d5;
+  border: 4px solid #494d52;
   border-radius: 5px;
   border: none;
-  border-bottom: 4px solid #8842d5;
-  background-color: #8842d5;
-  color: white;
+  background-color: #ececec;
 }
 
-input[type="text"]:focus {
-  background-color: #8842d5;
-  border: 5px solid #8842d5;
-}
+/* input[type="text"]:focus {
+  background-color: #494d52;
+  border: 0.1px solid #494d52;
+} */
 
 textarea {
   width: 80%;
   height: 200px;
   padding: 15px 22px;
   box-sizing: border-box;
-  border: 4px solid #8842d5;
+  border: none;
   border-radius: 5px;
-  background-color: 8842d5;
   resize: none;
+  margin: 1px 5px;
+  background-color: #ececec;
 }
 
 button {
-  background-color: #8842d5;
+  background-color: #494d52;
   border: none;
   color: white;
-  padding: 18px 36px;
+  padding: 1.5em 3em;
+  border-radius: 5px;
   text-decoration: none;
   margin: 5px 4px;
   cursor: pointer;

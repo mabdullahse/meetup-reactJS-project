@@ -4,8 +4,6 @@ import NewMeetupItem from "../components/meetups/NewMeetupItem";
 function NewMeetups(props) {
   const historyInstance = useHistory();
   async function addMeetupHandler(formData) {
-    console.log(formData);
-
     const uri = `${process.env.REACT_APP_FIREBASE_URL}`;
     const options = {
       method: "POST",
@@ -21,12 +19,13 @@ function NewMeetups(props) {
       console.log(resp);
       historyInstance.replace("/");
     } catch (err) {
+      alert("This is dummy project, need to attached firebase URL");
       console.error(err["message"]);
     }
   }
   return (
     <div>
-      <h1>NewMeetups Meetups</h1>
+      <h1 style={{ marginBottom: "10px" }}>New Meetups Meetups</h1>
       <NewMeetupItem onAddMeetup={addMeetupHandler} />
     </div>
   );

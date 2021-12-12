@@ -21,7 +21,7 @@ function MainNav(props) {
           <li>
             <Link to="/favorites">
               {" "}
-              Favourite Meetups - {facmeetupCtx.totalFavorites}
+              Favorite Meetups <span>{facmeetupCtx.totalFavorites}</span>
             </Link>
           </li>
         </ul>

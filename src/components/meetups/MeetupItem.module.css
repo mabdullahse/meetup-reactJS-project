@@ -6,6 +6,7 @@
 
 .image {
   width: 100%;
+  border-radius: 18px;
 }
 
 .action {
@@ -21,8 +22,8 @@
   height: 50px;
   border: none;
   outline: none;
-  color: #fff;
-  background: #111;
+  color: #faf8ff;
+  background-color: #494d52;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -75,7 +76,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
   left: 0;
   top: 0;
   border-radius: 10px;

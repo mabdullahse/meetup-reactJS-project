@@ -6,7 +6,7 @@ import classes from "./MeetupItem.module.css";
 
 function MeetupItem(props) {
   const favoriteCtx = useContext(FavoritesContext);
-  console.log(favoriteCtx);
+
   let isFavoriteMeetup = favoriteCtx.itemIsFavorite(props.id);
 
   function toggleFavouriteHanlder() {
@@ -37,7 +37,7 @@ function MeetupItem(props) {
             className={classes.favButton}
             onClick={toggleFavouriteHanlder}
           >
-            {isFavoriteMeetup ? "Remvoe from Favorite" : "Add to Favorite"}
+            {isFavoriteMeetup ? "Remove from Favorite" : "Add to Favorite"}
           </button>
         </div>
       </Card>

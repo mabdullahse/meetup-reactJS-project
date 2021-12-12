@@ -15,7 +15,7 @@ function Favorites(props) {
 
   return (
     <div>
-      <h3>My Favorite Item List</h3>
+      <h1>My Favorite Item List</h1>
       {context}
     </div>
   );

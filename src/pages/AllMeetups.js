@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import MeetupList from "../components/meetups/MeetupList";
+import Meetup from "../db";
 
 function AllMeetups(props) {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,17 +23,30 @@ function AllMeetups(props) {
 
         const meetupList = [];
 
+        /* for dummy purpose to be removed : Start*/
         for (const key in resp) {
           meetupList.push({
             id: key,
             ...resp[key],
           });
         }
-
         setMeetupList(meetupList);
         setIsLoading(false);
       } catch (err) {
         console.error(err["message"]);
+
+        /* for dummy purpose to be removed : Start */
+        let resp = Meetup;
+        for (const key in resp) {
+          meetupList.push({
+            id: key,
+            ...resp[key],
+          });
+        }
+        setMeetupList(meetupList);
+        setIsLoading(false);
+        /* for dummy purpose to be removed : END */
+        
       }
     }
     fetchDate();
@@ -43,7 +57,7 @@ function AllMeetups(props) {
   }
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>All Meetups</h1>
+      <h1>All Meetups</h1>
       <MeetupList meetups={meetupList} />
     </div>
   );
