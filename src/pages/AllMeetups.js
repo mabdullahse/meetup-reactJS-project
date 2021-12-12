@@ -59,7 +59,7 @@ function AllMeetups(props) {
       <a target="_blank" href="https://www.mabdullahse.com/">
         <img
           className="react-card"
-          src="/react-card.svg"
+          src="./react-card.svg"
           alt="muhammad abdullah react card expertise"
         />
       </a>
