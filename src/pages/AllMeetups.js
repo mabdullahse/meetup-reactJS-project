@@ -46,17 +46,23 @@ function AllMeetups(props) {
         setMeetupList(meetupList);
         setIsLoading(false);
         /* for dummy purpose to be removed : END */
-        
       }
     }
     fetchDate();
-  }, []);
+  }, [meetupList]);
 
   if (isLoading) {
     return <h1> Loading...</h1>;
   }
   return (
     <div>
+      <a target="_blank" href="https://www.mabdullahse.com/">
+        <img
+          className="react-card"
+          src="/react-card.svg"
+          alt="muhammad abdullah react card expertise"
+        />
+      </a>
       <h1>All Meetups</h1>
       <MeetupList meetups={meetupList} />
     </div>

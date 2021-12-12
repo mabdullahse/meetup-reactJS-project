@@ -23,3 +23,18 @@ body {
     scrollbar-gutter: stable;
   }
 }
+
+.react-card {
+  position: absolute;
+  max-height: 33rem;
+  left: 44px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 35rem) {
+  .react-card {
+    display: none;
+  }
+}
